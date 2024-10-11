@@ -5,7 +5,7 @@
 yall im ass at css so yall gotta help me make this adaptable
 
 i used alot of stuff from this repo:
-[ZenMods/[Setup] Arc Mode on Zen at main · KiKaraage/ZenMods](https://github.com/KiKaraage/ZenMods/tree/main/[Setup] Arc Mode on Zen)
+[ZenMods/[Setup] Arc Mode on Zen at main · KiKaraage/ZenMods](https://github.com/KiKaraage/ZenMods/tree/main/%5BSetup%5D%20Arc%20Mode%20on%20Zen)
 
 to get the link thing use this:
 [Copy Link Button / Copy Frame or Page URL – Get this Extension for 🦊 Firefox (en-US)](https://addons.mozilla.org/en-US/firefox/addon/copy-frame-or-page-url/)
