@@ -108,17 +108,34 @@
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
+
+
+
+#urlbar-container {
+  position: relative;
+}
+  #urlbar {
+  border: none !important;
+  width: 150px !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: width 0.3s ease;
+}
+#urlbar:focus-within {
+  width: 300px !important;
+}
+
+
+
+
+
 #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
   #urlbar-input {
     font-size: 16px !important;
   }
-  #urlbar {
-    border: initial;
-    width: auto;
-    margin: 0;
-    position: static;
-  }
-
+  
   z-index: 2;
   position: fixed !important;
   bottom: auto !important;
@@ -157,7 +174,7 @@
     margin: auto 0;
   }
   #urlbar-background {
-    background-color: white !important;
+    background-color: black !important;
   }
 }
 
@@ -358,13 +375,6 @@
   padding-top: 0px !important;
 }
 
-#urlbar {
-  border: None !important;
-  width: 150px !important;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 #urlbar-zoom-button {
   display: None !important;
@@ -481,3 +491,4 @@
   flex-shrink: 0;
   font-size: 14px;
 }
+
