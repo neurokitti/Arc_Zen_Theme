@@ -154,10 +154,10 @@ transition: font-size 0.3s ease;
         font-size: 16px !important;
     }
   #urlbar {
-  border: initial; /* or revert to specific border properties */
-  width: auto; /* Default width */
-  margin: 0; /* Remove margins */
-  position: static; /* Default positioning */
+  border: initial; 
+  width: auto; 
+  margin: 0; 
+  position: static; 
 }
 
 
@@ -435,10 +435,10 @@ transition: font-size 0.3s ease;
 }
 
 .urlbar-input div {
-    display: inline-block; /* Makes the inner div adjust to the size of its content */
-    width: auto;           /* Allows the div to expand based on the content size */
-    white-space: nowrap;   /* Prevents text wrapping if you want the div to stay on one line */
-    padding: 5px;          /* Optional: Adds padding for aesthetics */
+    display: inline-block; 
+    width: auto;           
+    white-space: nowrap;   
+    padding: 5px;          
 }
 
 
@@ -449,15 +449,15 @@ transition: font-size 0.3s ease;
 }
 
 #zen-sidebar-top-buttons {
-  height: 32px !important;  /* Set this to the desired height */
-	min-height: 32px !important;  /* Ensure the minimum height matches */
+  height: 32px !important;  
+	min-height: 32px !important;  
     
 }
 
 #nav-bar {
-	height: 32px !important;  /* Set this to the desired height */
-	min-height: 32px !important;  /* Ensure the minimum height matches */
-	padding: 0 !important;  /* Remove extra padding */
+	height: 32px !important;  
+	min-height: 32px !important;  
+	padding: 0 !important;  
     
 }
 #urlbar-background {
@@ -486,9 +486,9 @@ transition: font-size 0.3s ease;
 #urlbar {
   border: None !important;
   width: 150px !important;
-  position: absolute; /* Positioning it absolutely */
-  left: 50%; /* Move to the center */
-  transform: translateX(-50%); /* Offset by half its width to center */
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
 
 
 }
@@ -530,17 +530,17 @@ transition: font-size 0.3s ease;
 
 #vertical-pinned-tabs-container::before {
   content: '🚀 Zen Browser'; /* Text content to be displayed */
-  display: block; /* Ensure it's treated as a block element */
-  position: absolute; /* Allows precise positioning */
-  bottom: 0; /* Place it at the bottom of the container */
-  left: 0; /* Align it to the left */
-  width: 100%; /* Make it span the entire container width */
-  padding: 6px; /* Optional: Add some padding */
-  background-color: transparent; /* Optional: Background color for better visibility */
-  color: rgba(255,255,255,0.7); /* Text color */
-  text-align: left; /* Center the text */
+  display: block; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  padding: 6px; 
+  background-color: transparent; 
+  color: rgba(255,255,255,0.7); 
+  text-align: left; 
   font-size: 13px !important;
-  margin-bottom: 5px; /* Optional: Add some padding */
+  margin-bottom: 5px; 
 }
 
 
@@ -604,11 +604,11 @@ transition: font-size 0.3s ease;
   scale: 1;
   }
 
- /* Adjust the height of the navigation bar */
+ 
 #nav-bar {
-	height: 32px !important;  /* Set this to the desired height */
-	min-height: 32px !important;  /* Ensure the minimum height matches */
-	padding: 0 !important;  /* Remove extra padding */
+	height: 32px !important;  
+	min-height: 32px !important;  
+	padding: 0 !important;  
     
 }
 
@@ -618,10 +618,10 @@ transition: font-size 0.3s ease;
 
 .tab-text,
 .tab-label {
-	color: white !important; /* Set the text color to white */
+	color: white !important; 
 }
 .tab-close-button, .close-icon {
-color: white !important; /* Set the text color to white */
+color: white !important; 
 }
 
 
@@ -640,12 +640,12 @@ color: white !important; /* Set the text color to white */
 	content: "New Tab";
 	display: flex;
 	align-items: center;
-	justify-content: flex-start; /* Align content to the start */
+	justify-content: flex-start; 
 	color: rgba(255,255,255,0.7);
-	width: 100%; /* Fill container width */
+	width: 100%; 
 	height: 28px;
 	background-image: url("chrome://global/skin/icons/plus.svg");
-	background-position: 10px center; /* Position the icon on the left, centered vertically */
+	background-position: 10px center; 
 	background-repeat: no-repeat;
 	background-size: 16px;
 	border-radius: 4px;
@@ -653,19 +653,19 @@ color: white !important; /* Set the text color to white */
 	-moz-context-properties: fill;
 	fill: rgba(255,255,255,0.7);
     
-	/* Make it clickable */
+	
 	-moz-window-dragging: no-drag;
 	cursor: pointer;
 	margin-top: 2px !important;
  	margin-bottom: 5px !important;
-	/* Padding to position the text after the icon */
-	padding-left: 36px; /* 16px for the icon size + 8px gap between the icon and text */
+	
+	padding-left: 36px; 
     
-	/* Optional: Add some padding or margin if needed */
+	
 
 	box-sizing: border-box;
     
-	/* Ensure it's properly positioned */
+	
 	position: relative;
 	flex-shrink: 0;
 	font-size: 14px;
