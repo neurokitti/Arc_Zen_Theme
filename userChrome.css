@@ -10,6 +10,8 @@
   opacity: 1 !important;
 }
 
+
+
 .subviewbutton {
   background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -22,12 +24,13 @@
   height: auto !important;
   background-color: transparent !important;
   border-radius: 0;
+  transform: scale(1.4); 
 }
 
 .subviewbutton[tooltiptext]:not([active="true"]):hover .zen-workspace-icon {
   visibility: visible !important;
   filter: saturate(140%) brightness(110%) !important;
-  transform: scale(1);
+  transform: scale(1.2);
   opacity: 1 !important;
 }
 
@@ -491,4 +494,5 @@
   flex-shrink: 0;
   font-size: 14px;
 }
+
 
