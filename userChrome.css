@@ -46,7 +46,7 @@
   display: block;
   width: 100%;
   max-height: min-content;
-  background: bl !important;
+  background: transparent !important;
 }
 
 @container workspaces (width < 100px) {
@@ -87,7 +87,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  overflow: hidden;
+  
 }
 
 /* Style for the toolbar buttons */
@@ -177,26 +177,28 @@
     margin: auto 0;
   }
   #urlbar-background {
-    background-color: black !important;
+    background-color: rgb(13, 13, 13) !important;
   }
 }
 
 .tabbrowser-tab[pinned] {
   min-height: 50px !important;
+  
 }
 
+
 .tabbrowser-tab[pinned] .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* background color when hovering */
 .tabbrowser-tab[pinned]:hover .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 /* background color when selected */
 .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background,
 .tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 /* background color when hovering and selected */
 .tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background,
@@ -412,9 +414,6 @@
   margin-bottom: 5px;
 }
 
-#zen-workspaces-button {
-  background-color: transparent !important;
-}
 
 .titlebar-button.titlebar-min {
   list-style-image: url("./icons/minimize.svg") !important;
@@ -494,5 +493,17 @@
   flex-shrink: 0;
   font-size: 14px;
 }
+
+
+
+      @-moz-document url-prefix("chrome:") {
+        
+#tabbrowser-tabs .tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover) .tab-close-button {
+    display: none !important;
+}
+
+      }    
+
+
 
 
