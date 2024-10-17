@@ -13,8 +13,10 @@
 
 
 .subviewbutton {
-  background-color: rgba(0, 0, 0, 0) !important;
+  
 }
+
+
 
 .subviewbutton[tooltiptext][active="true"] .zen-workspace-icon {
   visibility: visible;
@@ -49,7 +51,25 @@
   background: transparent !important;
 }
 
-@container workspaces (width < 100px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@container workspaces (width > 100px) {
   .subviewbutton[tooltiptext]:not([active="true"]):not(:hover) {
     width: 8px !important;
     padding: 0px;
@@ -503,7 +523,5 @@
 }
 
       }    
-
-
 
 
