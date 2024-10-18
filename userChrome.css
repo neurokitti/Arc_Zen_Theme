@@ -1,3 +1,4 @@
+
 /* Removes the litle dot*/
 .subviewbutton[tooltiptext][active="true"]::after,
 .subviewbutton[tooltiptext][active="true"] .workspace-indicator {
@@ -12,9 +13,7 @@
 
 
 
-.subviewbutton {
-  
-}
+
 
 
 
@@ -127,6 +126,7 @@
   transition: font-size 0.3s ease;
 }
 
+
 #urlbar-background {
   background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -236,11 +236,11 @@
 
 /* Other icons */
 #zen-profile-button-icon {
-  list-style-image: url("./icons/arc-logo.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/arc-logo.svg") !important;
   scale: 1.1;
 }
 #unified-extensions-button {
-  list-style-image: url("./icons/split.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/split.svg") !important;
   scale: 0.71;
 }
 
@@ -262,7 +262,7 @@
 }
 
 #downloads-button::after {
-  content: url("./icons/downloads.svg") !important;
+  content: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/downloads.svg") !important;
   display: block;
   scale: 1;
   padding: 0;
@@ -281,43 +281,46 @@
 
 /* sets the linkly Extention to the arc copy link icon */
 #pageAction-urlbar-copy-frame-url_jeffersonscher_com {
-  list-style-image: url("./icons/copy_link.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/copy_link.svg") !important;
   scale: 0.75;
 }
 
 /* sets the expand sidebar svg */
-#zen-expand-sidebar-button {
-  list-style-image: url("./icons/sidebar.svg") !important;
+#zen-sidepanel-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/sidebar.svg") !important;
   scale: 1;
   margin-left: 1px !important;
 }
 
 /* sets the history svg */
 #history-panelmenu {
-  list-style-image: url("./icons/archive.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/archive.svg") !important;
   scale: 0.9;
   padding-inline-start: 3px !important;
+  height: 100 !important;
 }
+
 
 /* sets the new tabs svg */
 #new-tab-button {
-  list-style-image: url("./icons/new_tab.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/new_tab.svg") !important;
   scale: 0.9;
   padding-inline-end: 3px !important;
 }
 
+
 #back-button {
-  list-style-image: url("./icons/back.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/back.svg") !important;
   scale: 0.8;
 }
 
 #forward-button {
-  list-style-image: url("./icons/next.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/next.svg") !important;
   scale: 0.8;
 }
 
 #reload-button {
-  list-style-image: url("./icons/refresh.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/refresh.svg") !important;
   scale: 0.9;
 }
 
@@ -328,7 +331,7 @@
 }
 
 #identity-icon {
-  list-style-image: url("./icons/settings.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/settings.svg") !important;
   scale: 0.75;
 }
 #identity-icon-box {
@@ -436,7 +439,7 @@
 
 
 .titlebar-button.titlebar-min {
-  list-style-image: url("./icons/minimize.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/minimize.svg") !important;
   padding: 15px !important;
   padding-left: 17px !important;
   padding-right: 17px !important;
@@ -444,7 +447,7 @@
 }
 
 .titlebar-button.titlebar-max {
-  list-style-image: url("./icons/maximize.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/maximize.svg") !important;
   padding: 15px !important;
   padding-left: 17px !important;
   padding-right: 17px !important;
@@ -452,7 +455,7 @@
 }
 
 .titlebar-button.titlebar-close {
-  list-style-image: url("./icons/close.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/close.svg") !important;
   padding: 15px !important;
   padding-left: 17px !important;
   padding-right: 20px !important;
@@ -461,7 +464,7 @@
 }
 
 .titlebar-button.titlebar-restore {
-  list-style-image: url("./icons/maximize.svg") !important;
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/maximize.svg") !important;
   padding: 10px !important;
   padding-left: 17px !important;
   padding-right: 17px !important;
@@ -513,15 +516,4 @@
   flex-shrink: 0;
   font-size: 14px;
 }
-
-
-
-      @-moz-document url-prefix("chrome:") {
-        
-#tabbrowser-tabs .tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover) .tab-close-button {
-    display: none !important;
-}
-
-      }    
-
 
