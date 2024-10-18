@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/a65caffb-6264-4d36-b3fd-b5e3a53f26b1)
 
 # Arc_Zen_Theme
-
+to learn how to apply the costom css use the zen docs [here](https://docs.zen-browser.app/guides/live-editing)
 yall im ass at css so yall gotta help me make this adaptable
 
 i used alot of stuff from this repo:
