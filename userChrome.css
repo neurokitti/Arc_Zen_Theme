@@ -227,15 +227,17 @@
 #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
   #urlbar-input {
     font-size: 16px !important;
+    padding-bottom: 10px !important;
+    text-align: left !important;
   }
   
   z-index: 2;
   position: fixed !important;
   bottom: auto !important;
-  top: 20vh !important;
+  top: 25vh !important;
   padding-left: 6px !important;
   padding-right: 8px !important;
-
+  padding-top: 15px !important;
   left: 18vw !important;
   right: 18vw !important;
   width: 64vw !important;
@@ -260,14 +262,16 @@
   #identity-box {
     margin: auto 0;
     height: 30px;
-    margin-right: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px !important;
+    width: 43px !important;
   }
 
   .urlbar-go-button {
     margin: auto 0;
   }
   #urlbar-background {
-    background-color: rgb(13, 13, 13) !important;
+    background-color: rgb(13, 13, 13, 0.95) !important;
   }
 }
 
