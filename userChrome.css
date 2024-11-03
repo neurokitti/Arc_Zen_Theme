@@ -1,4 +1,3 @@
-
 /* Removes the litle dot*/
 .subviewbutton[tooltiptext][active="true"]::after,
 .subviewbutton[tooltiptext][active="true"] .workspace-indicator {
@@ -10,12 +9,6 @@
   filter: saturate(140%) brightness(110%) !important;
   opacity: 1 !important;
 }
-
-
-
-
-
-
 
 .subviewbutton[tooltiptext][active="true"] .zen-workspace-icon {
   visibility: visible;
@@ -49,26 +42,107 @@
   max-height: min-content;
   background: transparent !important;
 }
+#TabsToolbar {
+  container-name: tabbar;
+  container-type: inline-size;
+}
+
+  #tabbrowser-arrowscrollbox::before {
+    overflow:hidden;
+    white-space:nowrap;
+    content: "New Tab";
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 28px;
+    background-image: url("chrome://global/skin/icons/plus.svg");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border-radius: 4px;
+    padding: 18px;
+    -moz-context-properties: fill;
+    fill: rgba(255, 255, 255, 0.7);
+    -moz-window-dragging: no-drag;
+    cursor: pointer;
+    margin-top: 2px !important;
+    margin-bottom: 5px !important;
+    padding-left: 36px;
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+    font-size: 14px;
+  }
 
 
+  #vertical-pinned-tabs-container::before {
+    content: "🚀 Zen Browser"; /* Text content to be displayed */
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    font-size: 13px !important;
+    margin-bottom: 5px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Resize contents for smaller tab bar */
+@container tabbar (width < 100px) {
+  
+  #tabbrowser-arrowscrollbox::before {
+    overflow:hidden;
+    white-space:nowrap;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 28px;
+    background-image: url("chrome://global/skin/icons/plus.svg");
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border-radius: 4px;
+    padding: 18px;
+    -moz-context-properties: fill;
+    fill: rgba(255, 255, 255, 0.7);
+    -moz-window-dragging: no-drag;
+    cursor: pointer;
+    margin-top: 2px !important;
+    margin-bottom: 5px !important;
+    padding-left: 0px;
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+    font-size: 14px;
+  }
+  
+  #vertical-pinned-tabs-container::before {
+    content: "🚀";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 100%;
+    padding: 6px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    font-size: 13px !important;
+    margin-bottom: 5px;
+  }
+  
+}
 
 @container workspaces (width < 100px) {
+  
   .subviewbutton[tooltiptext]:not([active="true"]):not(:hover) {
     width: 8px !important;
     padding: 0px;
@@ -131,12 +205,10 @@
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-
-
-
 #urlbar-container {
   position: relative;
 }
+
   #urlbar {
   border: none !important;
   width: 150px !important;
@@ -146,26 +218,25 @@
   margin: 0 auto;
   transition: width 0.3s ease;
 }
+
 #urlbar:focus-within {
   width: 300px !important;
 }
 
-
-
-
-
 #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
   #urlbar-input {
     font-size: 16px !important;
+    padding-bottom: 10px !important;
+    text-align: left !important;
   }
   
   z-index: 2;
   position: fixed !important;
   bottom: auto !important;
-  top: 20vh !important;
+  top: 25vh !important;
   padding-left: 6px !important;
   padding-right: 8px !important;
-
+  padding-top: 15px !important;
   left: 18vw !important;
   right: 18vw !important;
   width: 64vw !important;
@@ -190,14 +261,16 @@
   #identity-box {
     margin: auto 0;
     height: 30px;
-    margin-right: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px !important;
+    width: 43px !important;
   }
 
   .urlbar-go-button {
     margin: auto 0;
   }
   #urlbar-background {
-    background-color: rgb(13, 13, 13) !important;
+    background-color: rgb(13, 13, 13, 0.95) !important;
   }
 }
 
@@ -231,7 +304,7 @@
 }
 
 .tabbrowser-tab[selected="true"] .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 /* Other icons */
@@ -408,9 +481,6 @@
   display: None !important;
 }
 
-#nav-bar {
-}
-
 :root {
   #browser,
   #TabsToolbar::after {
@@ -420,21 +490,6 @@
 
 #vertical-pinned-tabs-container {
   padding-bottom: 45px !important;
-}
-
-#vertical-pinned-tabs-container::before {
-  content: "🚀 Zen Browser"; /* Text content to be displayed */
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 6px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: left;
-  font-size: 13px !important;
-  margin-bottom: 5px;
 }
 
 
@@ -485,35 +540,3 @@
 .close-icon {
   color: white !important;
 }
-
-#tabbrowser-arrowscrollbox::before {
-  content: "New Tab";
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  height: 28px;
-  background-image: url("chrome://global/skin/icons/plus.svg");
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  background-size: 16px;
-  border-radius: 4px;
-  padding: 18px;
-  -moz-context-properties: fill;
-  fill: rgba(255, 255, 255, 0.7);
-
-  -moz-window-dragging: no-drag;
-  cursor: pointer;
-  margin-top: 2px !important;
-  margin-bottom: 5px !important;
-
-  padding-left: 36px;
-
-  box-sizing: border-box;
-
-  position: relative;
-  flex-shrink: 0;
-  font-size: 14px;
-}
-
