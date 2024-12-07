@@ -200,113 +200,6 @@
   transition: font-size 0.3s ease;
 }
 
-
-#urlbar-background {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
-#urlbar-container {
-  position: relative;
-}
-
-  #urlbar {
-  border: none !important;
-  width: 150px !important;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: width 0.3s ease;
-}
-
-#urlbar:focus-within {
-  width: 300px !important;
-}
-
-#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
-  #urlbar-input {
-    font-size: 16px !important;
-    padding-bottom: 10px !important;
-    text-align: left !important;
-  }
-  
-  z-index: 2;
-  position: fixed !important;
-  bottom: auto !important;
-  top: 25vh !important;
-  padding-left: 6px !important;
-  padding-right: 8px !important;
-  padding-top: 15px !important;
-  left: 18vw !important;
-  right: 18vw !important;
-  width: 64vw !important;
-
-  &:after {
-    content: "";
-    position: fixed;
-    pointer-events: none;
-
-    width: 100vw;
-    height: 100vh;
-
-    top: 0px;
-    left: 0px;
-
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
-
-    z-index: -1;
-  }
-
-  #identity-box {
-    margin: auto 0;
-    height: 30px;
-    margin-left: 5px;
-    padding-bottom: 10px !important;
-    width: 43px !important;
-  }
-
-  .urlbar-go-button {
-    margin: auto 0;
-  }
-  #urlbar-background {
-    background-color: rgb(13, 13, 13, 0.95) !important;
-  }
-}
-
-.tabbrowser-tab[pinned] {
-  min-height: 50px !important;
-  
-}
-
-
-.tabbrowser-tab[pinned] .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-/* background color when hovering */
-.tabbrowser-tab[pinned]:hover .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
-/* background color when selected */
-.tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background,
-.tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-/* background color when hovering and selected */
-.tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background,
-.tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.4) !important;
-}
-
-:root {
-  --toolbarbutton-hover-background: rgba(255, 255, 255, 0.2) !important;
-}
-
-.tabbrowser-tab[selected="true"] .tab-stack .tab-background {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-
 /* Other icons */
 #zen-profile-button-icon {
   list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/arc-logo.svg") !important;
@@ -315,11 +208,6 @@
 #unified-extensions-button {
   list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/split.svg") !important;
   scale: 0.71;
-}
-
-/* hides the 3 dots */
-#PanelUI-button {
-  display: None;
 }
 
 /* Fix for Downloads button using content */
@@ -373,15 +261,6 @@
   height: 100 !important;
 }
 
-
-/* sets the new tabs svg */
-#new-tab-button {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/new_tab.svg") !important;
-  scale: 0.9;
-  padding-inline-end: 3px !important;
-}
-
-
 #back-button {
   list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/back.svg") !important;
   scale: 0.8;
@@ -395,12 +274,6 @@
 #reload-button {
   list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/refresh.svg") !important;
   scale: 0.9;
-}
-
-/* HIDES THE ICONS */
-
-#identity-permission-box {
-  display: none !important;
 }
 
 #identity-icon {
@@ -526,17 +399,3 @@
   scale: 1;
 }
 
-#nav-bar {
-  height: 32px !important;
-  min-height: 32px !important;
-  padding: 0 !important;
-}
-
-.tab-text,
-.tab-label {
-  color: white !important;
-}
-.tab-close-button,
-.close-icon {
-  color: white !important;
-}
