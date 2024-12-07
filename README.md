@@ -1,3 +1,6 @@
+# IMPORTANT: THIS CSS HAS BEEN EDITED TO WORK WITH THE NEW VERSION OF ZEN SO UPDATE
+
+
 ![image](https://github.com/user-attachments/assets/a65caffb-6264-4d36-b3fd-b5e3a53f26b1)
 
 # Arc_Zen_Theme
