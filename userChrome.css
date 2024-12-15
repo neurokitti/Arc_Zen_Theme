@@ -225,14 +225,6 @@
   display: None !important;
 }
 
-:root {
-  #browser,
-  #TabsToolbar::after {
-    background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-normal.png") !important;
-  }
-}
-
-
 .titlebar-button.titlebar-min {
   list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/minimize.svg") !important;
   padding: 15px !important;
