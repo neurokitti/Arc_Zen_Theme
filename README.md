@@ -4,7 +4,12 @@
 
 # Arc_Zen_Theme
 to learn how to apply the costom css use the zen docs [here](https://docs.zen-browser.app/guides/live-editing)
-yall im ass at css so yall gotta help me make this adaptable
+
+make sure you are in single side bar mode
+for the button layout:
+right click toolbar > costomize toolbar > 
+- drag the new tab button to the bottom right of the sidebar
+- drag history on the left side
 
 i used alot of stuff from this repo:
 [ZenMods/[Setup] Arc Mode on Zen at main · KiKaraage/ZenMods](https://github.com/KiKaraage/ZenMods/tree/main/%5BSetup%5D%20Arc%20Mode%20on%20Zen)
