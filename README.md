@@ -1,7 +1,6 @@
-# IMPORTANT: THIS CSS HAS BEEN EDITED TO WORK WITH THE NEW VERSION OF ZEN SO UPDATE
+# Arc Zen Theme
 
-
-![image](https://github.com/user-attachments/assets/a65caffb-6264-4d36-b3fd-b5e3a53f26b1)
+<img width="1327" alt="Screenshot 2025-01-03 at 1 44 11 AM" src="https://github.com/user-attachments/assets/8327548e-c918-4a49-9484-3b39b304eb03" />
 
 # Arc_Zen_Theme
 to learn how to apply the costom css use the zen docs [here](https://docs.zen-browser.app/guides/live-editing)
