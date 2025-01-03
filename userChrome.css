@@ -1,4 +1,5 @@
 
+
 @media (prefers-color-scheme: light) {
   :root {
     --icon-brightness: 0 !important; /* Adjust for light mode */
@@ -10,6 +11,11 @@
     --icon-brightness: 1 !important; /* Adjust for dark mode */
   }
 }
+
+#identity-icon-box, #identity-permission-box, #star-button-box, #tracking-protection-icon-container {
+  display: none !important;
+}
+
 
 #urlbar-input {
   font-size: 13px !important;
