@@ -1,178 +1,19 @@
-/* Removes the litle dot*/
-.subviewbutton[tooltiptext][active="true"]::after,
-.subviewbutton[tooltiptext][active="true"] .workspace-indicator {
-  display: none !important;
-}
 
-/* makes the icons look nicer*/
-.zen-workspace-icon {
-  filter: saturate(140%) brightness(110%) !important;
-  opacity: 1 !important;
-}
-
-.subviewbutton[tooltiptext][active="true"] .zen-workspace-icon {
-  visibility: visible;
-  filter: saturate(140%) brightness(110%) !important;
-  opacity: 1 !important;
-  width: auto !important;
-  height: auto !important;
-  background-color: transparent !important;
-  border-radius: 0;
-  transform: scale(1.4); 
-}
-
-.subviewbutton[tooltiptext]:not([active="true"]):hover .zen-workspace-icon {
-  visibility: visible !important;
-  filter: saturate(140%) brightness(110%) !important;
-  transform: scale(1.2);
-  opacity: 1 !important;
-}
-
-.subviewbutton[tooltiptext]:not([active="true"]):hover
-  .zen-workspace-icon::after {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0);
-}
-
-#zen-workspaces-button {
-  container-name: workspaces;
-  container-type: inline-size;
-  display: block;
-  width: 100%;
-  max-height: min-content;
-  background: transparent !important;
-}
-
-
-
-@container workspaces (width < 100px) {
-  
-  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover) {
-    width: 8px !important;
-    padding: 0px;
-  }
-
-  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover)
-    .zen-workspace-icon {
-    visibility: hidden;
-    position: relative;
-    padding: 0;
-    width: 5px !important;
-    height: 5px !important;
-    padding: 0px;
-  }
-
-  .subviewbutton[tooltiptext]:not([active="true"]) .zen-workspace-icon::after {
-    content: "";
-    width: 4px;
-    height: 4px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: visible !important;
-    z-index: 1;
-    padding: 0;
+@media (prefers-color-scheme: light) {
+  :root {
+    --icon-brightness: 0 !important; /* Adjust for light mode */
   }
 }
 
-/* Make the parent container a flexbox to handle resizing */
-#zen-workspaces-button {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  
-}
-
-/* Style for the toolbar buttons */
-#zen-workspaces-button .subviewbutton {
-  flex: 1;
-  min-width: 5px;
-  max-width: 100px;
-  height: auto;
-  padding: 4px;
-  margin: 2px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-}
-
-/* Adjust icon size relative to the button size */
-#zen-workspaces-button .subviewbutton .zen-workspace-icon {
-  transition: font-size 0.3s ease;
-}
-
-/* Other icons */
-#PanelUI-menu-button {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/arc-logo.svg") !important;
-  scale: 1.1;
-}
-
-#unified-extensions-button{
-  display: none !important;
-}
-
-/* Fix for Downloads button using content */
-#downloads-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-inline-start: 3px !important;
-  padding-inline-end: 3px !important;
-
-  background: none !important;
-}
-
-
-/* REPLACES THE ICONS */
-
-/* sets the linkly Extention to the arc copy link icon */
-#pageAction-urlbar-copy-frame-url_jeffersonscher_com {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/copy_link.svg") !important;
-  scale: 0.75;
-}
-
-/* sets the expand sidebar svg */
-#zen-sidepanel-button {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/sidebar.svg") !important;
-  scale: 1;
-  margin-left: 1px !important;
-}
-
-/* sets the history svg */
-#history-panelmenu {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/archive.svg") !important;
-  scale: 0.9;
-  padding-inline-start: 3px !important;
-  height: 100 !important;
-}
-
-#back-button {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/back.svg") !important;
-  scale: 1;
-}
-
-#forward-button {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/next.svg") !important;
-  scale: 1;
-}
-
-#reload-button {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/refresh.svg") !important;
-  scale: 1.1;
-}
-
-#identity-icon-box {
-  display: none !important;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-brightness: 1 !important; /* Adjust for dark mode */
+  }
 }
 
 #urlbar-input {
   font-size: 13px !important;
   line-height: 14px !important;
-  color: white !important;
 }
 
 .urlbar-input {
@@ -180,8 +21,7 @@
 }
 
 .urlbar-input {
-  /* Styles for the outer container, if needed */
-  display: inline-block; /* Ensures the container itself doesn't stretch */
+  display: inline-block;
 }
 
 .urlbar-input div {
@@ -225,35 +65,159 @@
   display: None !important;
 }
 
-.titlebar-button.titlebar-min {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/minimize.svg") !important;
-  padding: 15px !important;
-  padding-left: 17px !important;
-  padding-right: 17px !important;
-  scale: 0.9;
+#PanelUI-menu-button{
+  display: none !important;
 }
 
-.titlebar-button.titlebar-max {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/maximize.svg") !important;
-  padding: 15px !important;
-  padding-left: 17px !important;
-  padding-right: 17px !important;
-  scale: 0.9;
+#unified-extensions-button{
+  display: none !important;
 }
 
-.titlebar-button.titlebar-close {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/close.svg") !important;
-  padding: 15px !important;
-  padding-left: 17px !important;
-  padding-right: 20px !important;
-  scale: 0.9;
-  margin-right: -2px !important;
+/* makes the icons look nicer*/
+.zen-workspace-icon {
+  filter: brightness(0.7) !important;
+  opacity: 1 !important;
 }
 
-.titlebar-button.titlebar-restore {
-  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/maximize.svg") !important;
-  padding: 10px !important;
-  padding-left: 17px !important;
-  padding-right: 17px !important;
+.subviewbutton[tooltiptext][active="true"] .zen-workspace-icon {
+  visibility: visible;
+  filter: brightness(0.7) !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: transparent !important;
+  border-radius: 0;
+  transform: scale(1.4); 
+}
+
+.subviewbutton[tooltiptext]:not([active="true"]):hover .zen-workspace-icon {
+  visibility: visible !important;
+  filter: brightness(0.7) !important;
+  transform: scale(1.2);
+  opacity: 1 !important;
+}
+
+.subviewbutton[tooltiptext]:not([active="true"]):hover
+  .zen-workspace-icon::after {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+#zen-workspaces-button {
+  container-name: workspaces;
+  container-type: inline-size;
+  display: block;
+  width: 100%;
+  max-height: min-content;
+  background: transparent !important;
+}
+
+@container workspaces (width < 100px) {
+  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover) {
+    width: 8px !important;
+    padding: 0px;
+  }
+
+  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover)
+    .zen-workspace-icon {
+    visibility: hidden;
+    position: relative;
+    padding: 0;
+    width: 5px !important;
+    height: 5px !important;
+    padding: 0px;
+  }
+
+  .subviewbutton[tooltiptext]:not([active="true"]) .zen-workspace-icon::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible !important;
+    z-index: 1;
+    padding: 0;
+  }
+}
+
+/* Make the parent container a flexbox to handle resizing */
+#zen-workspaces-button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
+
+/* Style for the toolbar buttons */
+#zen-workspaces-button .subviewbutton {
+  flex: 1;
+  min-width: 5px;
+  max-width: 100px;
+  height: auto;
+  padding: 4px;
+  margin: 2px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Adjust icon size relative to the button size */
+#zen-workspaces-button .subviewbutton .zen-workspace-icon {
+  transition: font-size 0.3s ease;
+}
+
+
+
+/* Other icons */
+#PanelUI-menu-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/arc-logo.svg") !important;
+  scale: 1.1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* sets the linkly Extention to the arc copy link icon */
+#pageAction-urlbar-copy-frame-url_jeffersonscher_com {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/copy_link.svg") !important;
+  scale: 0.75;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* sets the expand sidebar svg */
+#zen-sidepanel-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/sidebar.svg") !important;
   scale: 1;
+  margin-left: 1px !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* sets the history svg */
+#history-panelmenu {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/archive.svg") !important;
+  scale: 0.9;
+  padding-inline-start: 3px !important;
+  height: 100 !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+#back-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/back.svg") !important;
+  scale: 1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+#forward-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/next.svg") !important;
+  scale: 1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+#reload-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/refresh.svg") !important;
+  scale: 1.1;
+  filter: brightness(var(--icon-brightness)) !important;
+  
 }
